@@ -1,0 +1,48 @@
+{
+  "RECORDS":[
+    {
+      "id":"1",
+      "name":" 张鑫",
+      "sex":"男",
+      "class":"05软件2班",
+      "politic":"党员",
+      "nation":"汉族",
+      "duty":"班长",
+      "special":"贫困生",
+      "leave":"1",
+      "absence":"1",
+      "dormScore":"98分",
+      "talk":"无谈心",
+      "conduct":"优秀",
+      "sign":"86%",
+      "dormNo":"S214",
+      "add":"四川省-成都市青羊区光华大道8号88",
+      "fa":"张军",
+      "ma":"吴君",
+      "bro":"张森",
+      "rImage":" http:\/\/statics.aibanji.com:8080\/fileServer\/1\/userPhoto\/9004339\/picture\/small\/1_shu0105_1504221550.jpg"
+    },
+    {
+      "id":"2",
+      "name":" 李丽",
+      "sex":"女",
+      "class":"05软件2班",
+      "politic":"党员",
+      "nation":"汉族",
+      "duty":"学习委员",
+      "special":"贫困生",
+      "leave":"2",
+      "absence":"1",
+      "dormScore":"98分",
+      "talk":"无谈心",
+      "conduct":"优秀",
+      "sign":"80%",
+      "dormNo":"S414",
+      "add":"四川省-成都市金牛区",
+      "fa":"李金东",
+      "ma":"杨雨瑛",
+      "bro":"李毅",
+      "rImage":" http:\/\/statics.aibanji.com:8080\/fileServer\/1\/userPhoto\/9004339\/picture\/small\/1_shu0106_1504221550.jpg"
+    }
+  ]
+}

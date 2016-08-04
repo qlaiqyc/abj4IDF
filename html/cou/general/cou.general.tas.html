@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../../resource/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../../resource/css/animate.css" />
+    <link rel="stylesheet" href="../../../resource/css/bootstrap-table.css" />
+    <!-- 描述：动画效果  -->
+    <link rel="stylesheet" href="../../../resource/css/font-awesome.css" />
+    <link rel="stylesheet" href="../../../resource/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="../../../resource/css/base/base.css" />
+    <style>
+        #cou-general-tas{
+            position: relative;
+        }
+        #cou-cou-general-tas-search{
+            height:45px;
+            line-height:45px;
+        }
+        #cou-cou-general-tas-search p{
+            margin-right: 10px;
+            float: left;
+        }
+        #cou-cou-general-tas-search select{
+            margin-right: 20px;
+            float: left;
+            width:108px;
+            height:32px;
+            margin-top:7px;
+        }
+        #cou-cou-general-tas-search span{
+            float: left;
+            width:108px;
+            height:32px;
+            margin-top:7px;
+        }
+        #cou-cou-general-tas-search{
+            padding-left:5px;
+            display: none;
+        }
+        #cou-general-tas-search-btn{
+
+            height:45px;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+        #cou-general-tas-search-btn p{
+            font-size: 16px;
+            line-height: 40px;
+            padding-right: 15px;
+        }
+        #cou-general-tas-search-btn p i{
+            color:#818181;
+        }
+
+        /*************************/
+        p,h1,h2,h3,h4,h5,h6,div,img{
+            margin:0;
+            padding:0;
+        }
+        .prop-table-div{
+            width:541px;
+            padding-left:12px;
+            padding-right:12px;
+        }
+        .prop-table-div table{
+            width:517px;
+        }
+        .prop-table-div table tr{
+            width:100%;
+            border-bottom: 1px solid #e2e2e2;
+            line-height:24px;
+            vertical-align: top;
+        }
+        .prop-table-div table tr td{
+            padding-top:6px;
+            padding-bottom: 6px;
+        }
+        .prop-table-div .prop-table-div-title{
+            width:72px;
+        }
+        .prop-table-div .prop-table-div-info{
+            font-weight: bold;
+            width:340px;
+            padding-right:20px;
+        }
+        .prop-table-div .prop-table-div-time{
+            color:#b9b9b9;
+            font-size: 12px;
+            width: 125px;
+        }
+
+        /*---------------------------------------------*/
+        .cou-self-affairs-header{
+            height:120px;
+            padding-left:15px;
+            padding-top:17px;
+            padding-right:35px;
+        }
+        .cou-self-affairs-header-photo{
+            width:60px;
+            height:60px;
+            margin-top:13px;
+            margin-right:15px;
+            border-radius:4px;
+            float:left;
+        }
+        .cou-self-affairs-header-photo img{
+            width:60px;
+            height:60px;
+            border-radius:4px;
+        }
+        .cou-self-affairs-header-detail p{
+            color:#999;
+            font-size: 14px;
+        }
+        .cou-self-affairs-header-detail span:nth-child(1){
+            color:#333;
+        }
+        .cou-self-affairs-header-detail span{
+            line-height:40px;
+            margin-right:30px;
+        }
+        .cou-self-affairs-tab-info{
+            height:280px;
+        }
+        .cou-self-affairs-tab-info-content{
+            width:50%;
+            float: left;
+            line-height:40px;
+        }
+        .cou-self-affairs-tab-item{
+            padding-left:15px;
+        }
+
+
+        /***********************************/
+        .cou-self-affairs-header-detail p:first-child{
+            margin-top:10px;
+        }
+        .cou-self-affairs-header-detail p{
+            line-height:22px;
+        }
+        .cou-self-affairs-header-detail p span{
+            line-height:22px;
+            color:#333;
+            margin-right:12px;
+        }
+        .cou-general-tas-modal-header{
+            padding-top:10px;
+            border-bottom: 1px solid #e2e2e2;
+            height:105px;
+        }
+        .cou-general-tas-modal-info{
+            height:240px;
+            padding-top:10px;
+        }
+        .cou-general-tas-modal-info-content{
+            line-height:35px;
+        }
+        .cou-self-affairs-header-detail p .border-span-label{
+            display: inline-block;
+            margin-right:6px;
+            border-radius: 3px;
+            border:1px solid #0070ea;
+            color:#0070ea;
+            height:18px;
+            line-height:16px;
+            text-align: center;
+            padding-left:6px;
+            padding-right:6px;
+        }
+        #cou-general-tas-modal .cou-self-affairs-header-detail .cou-self-affairs-header-detail-name{
+            margin-right:30px;
+            font-size: 16px;
+        }
+
+        .cou-general-tas-modal-family-tab-header{
+            line-height:30px;
+            padding:10px 15px;
+            border-bottom: 1px solid #e2e2e2;
+        }
+        .cou-general-tas-modal-family-tab-info{
+            padding-top:20px;
+            padding-left:15px;
+        }
+        .cou-general-tas-modal-family-tab-family{
+            width:242px;
+            margin-bottom:20px;
+            float: left;
+            border: 1px solid #e2e2e4;
+            margin-right:20px;
+            background: #eeeff1;
+            border-radius: 4px;
+            padding:5px 0 13px 10px;
+        }
+        .cou-general-tas-modal-family-tab-family p{
+            line-height: 20px;
+        }
+        .cou-general-tas-modal-family-tab-family p:first-child{
+            line-height: 35px;
+            font-weight: bold;
+        }
+
+        .cou-general-tas-modal-school-tab-info{
+            padding-left:15px;
+            padding-top:20px;
+        }
+        .cou-general-tas-modal-school-tab-appearance{
+            width:242px;
+            margin-bottom:20px;
+            float: left;
+            border: 1px solid #e2e2e4;
+            margin-right:20px;
+            border-radius: 4px;
+        }
+        .appearance-title{
+            padding-left:10px;
+            padding-right: 14px;
+            background: #eeeff1;
+            height:32px;
+            border-bottom: #e2e2e4;
+        }
+        .appearance-title p{
+            line-height:31px;
+        }
+        .appearance-title p:first-child{
+            font-size:16px;
+            font-weight: bold;
+            float:left;
+        }
+        .appearance-title p:last-child{
+            float: right;
+        }
+        .appearance-content{
+            padding-left:10px;
+            padding-right: 14px;
+            height:70px;
+            padding-top:5px;
+        }
+        .appearance-content table{
+            width:100%;
+        }
+        .appearance-content table tr td{
+            height:30px;
+            line-height: 30px;
+            width:33%;
+        }
+        .appearance-content table tr td:nth-child(2){
+            text-align: center;
+        }
+        .appearance-content table tr td:last-child{
+            text-align: right;
+        }
+        .appearance-content p{
+            height: 30px;
+            line-height:30px;
+        }
+        .appearance-content span{
+            color:#0d70cb;
+        }
+        .appearance-content-dorm table tr td:nth-child(1){
+            width:25%;
+        }
+    </style>
+</head>
+<body>
+<div style="margin: 10px auto;width: 1100px; height: 500px;" id="cou-general-tas">
+    <div id="cou-general-tas-search-btn"><p><i class="glyphicon glyphicon-filter"></i>筛选</p></div>
+    <div class="header nav-tabs" id="cou-general-tas-header"></div>
+    <div id="cou-cou-general-tas-search">
+        <p>特殊情况:</p><select class="form-control"><option>全部</option></select>
+        <p>政治面貌:</p><select class="form-control"><option>全部</option></select>
+        <p>民族/班干部:</p><select class="form-control"><option>全部</option></select>
+        <p>操行情况:</p><select class="form-control"><option>全部</option></select>
+        <span class="form-control btn btn-info btn-darkBlue">确定</span>
+    </div>
+    <table id="cou-general-tas-tab-main">
+    </table>
+</div>
+
+
+<script src="../../../resource/js/plug/jquery/jquery-2.1.0.js"></script>
+<script src="../../../resource/js/plug/jquery/jquery.jsonp.js"></script>
+<script src="../../../resource/js/plug/bootstarp/bootstrap.js"></script>
+<script src="../../../resource/js/plug/bootstarp-table/bootstrap-table.js"></script>
+<script src="../../../resource/js/plug/bootstarp-table/bootstrap-table-zh-CN.js"></script>
+<script src="../../../resource/js/plug/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+<script src="../../../resource/js/plug/bootstrap-datepicker/bootstrap-datepicker.zh-CN.min.js"></script>
+
+<script src="../../../resource/js/plug/echar/echarts.js"></script>
+<script src="../../../resource/js/base/BaseUntil.js"></script>
+<script src="../../../resource/js/base/BasePlug.js"></script>
+<script src="../../../resource/js/base/plug/HtmlUntilBase.js"></script>
+<script src="../../../resource/js/base/request/GeneralRequest.js"></script>
+<script src="../../../resource/js/base/cou/general/HtmlUntil.js"></script>
+<script src="../../../resource/js/base/cou/general/cou.general.tas.js"></script>
+</body>
+</html>
